@@ -1,0 +1,18 @@
+#To knew the ip address
+ifconfig
+
+
+#a) live hosts:
+   sudo nmap -sn 10.0.2.15
+
+#b)services running on live hosts
+   sudo nmap -sV 10.0.2.15
+
+#c) Banner Grabbing
+   sudo nmap --script banner 10.0.2.15
+
+#d) OS fingerprinting
+  sudo nmap -O 10.0.2.15
+
+#e) performance scan
+   sudo nmap -A -T4 10.0.2.15
